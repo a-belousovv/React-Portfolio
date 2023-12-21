@@ -1,0 +1,30 @@
+.contacts__content_right {
+	border: 1px solid $green;
+	padding: 16px;
+	@include standartFlex(column, flex-start, flex-start);
+	gap: 10px;
+	.contacts__right_title {
+		color: $white;
+		font-family: $fira;
+		font-size: $px16;
+		font-weight: 600;
+	}
+	.contacts__right_items {
+		width: 100%;
+		@include standartFlex(column, flex-start, flex-start);
+		gap: 10px;
+		.contacts__items_item {
+			width: 100%;
+			@include standartFlex(row, center, flex-start);
+			gap: 5px;
+			cursor: pointer;
+			text-decoration: none;
+			.contacts__item_title {
+				color: $green;
+				font-family: $fira;
+				font-size: $px16;
+				font-weight: 400;
+			}
+		}
+	}
+}

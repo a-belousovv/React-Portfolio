@@ -1,0 +1,51 @@
+.contacts__header {
+	@include standartBlock(25px 0px);
+	&_box {
+		width: 100%;
+		@include standartFlex(row, flex-start, space-between);
+		gap: 30px;
+		@media (max-width: $media-m) {
+			@include standartFlex(column, center, space-between);
+		}
+		.contacts__header_left {
+			width: 50%;
+			@include standartFlex(row, center, center);
+			@media (max-width: $media-m) {
+				width: 100%;
+			}
+			.contacts__left_title {
+				font-family: $fira;
+				font-size: $px16;
+				color: $green;
+				font-weight: 400;
+			}
+		}
+		.contacts__header_right {
+			width: 50%;
+			@include standartFlex(row, flex-start, flex-end);
+			gap: 15px;
+			@media (max-width: $media-m) {
+				@include standartFlex(column, center, flex-start);
+				width: 100%;
+			}
+			.contacts__right_item {
+				border: 1px solid $green;
+				padding: 16px;
+				@include standartFlex(column, flex-start, flex-start);
+				gap: 5px;
+				.contacts__item_title {
+					color: $white;
+					font-family: $fira;
+					font-weight: 500;
+					font-size: $px16;
+				}
+				.contacts__item_text {
+					color: $green;
+					font-family: $fira;
+					font-weight: 400;
+					font-size: $px16;
+				}
+			}
+		}
+	}
+}

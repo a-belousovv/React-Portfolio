@@ -1,0 +1,23 @@
+.header-other-pages {
+	@include standartBlock(25px 0px);
+	.header__box {
+		width: 100%;
+		@include standartFlex(column, flex-start, flex-start);
+		gap: 10px;
+		.header__title {
+			color: $white;
+			font-family: $fira;
+			font-size: $px32;
+			font-weight: 600;
+			span {
+				color: $primary;
+			}
+		}
+		.header__text {
+			font-size: $px16;
+			font-weight: 400;
+			font-family: $fira;
+			color: $white;
+		}
+	}
+}

@@ -1,0 +1,263 @@
+[
+	{
+		"blockTitle": "navigation",
+		"logo": {
+			"title": "Alex",
+			"img": "/icons/navigation/logo.svg"
+		},
+		"links": [
+			{
+				"id": "home",
+				"title": "home",
+				"href": "/"
+			},
+			{
+				"id": "projects",
+				"title": "projects",
+				"href": "/projects"
+			},
+			{
+				"id": "about",
+				"title": "about-me",
+				"href": "/about"
+			},
+			{
+				"id": "contacts",
+				"title": "contacts",
+				"href": "/contacts"
+			}
+		],
+		"languages": {
+			"header": {
+				"id": "EN-lang",
+				"language": "EN"
+			},
+			"content": [
+				{
+					"id": "RU-lang",
+					"language": "RU"
+				},
+				{
+					"id": "EN-lang",
+					"language": "EN"
+				}
+			]
+		},
+		"linksLeftMenu": [
+			{
+				"id": "github",
+				"img": "/icons/socials/github.svg",
+				"href": "https://github.com/a-belousovv"
+			},
+			{
+				"id": "telegram",
+				"img": "/icons/socials/telegram.svg",
+				"href": "https://t.me/justinternetuser"
+			},
+			{
+				"id": "landmark",
+				"img": "/icons/socials/landmark.svg",
+				"href": "https://www.google.com/maps/place/%D0%9C%D0%B8%D0%BD%D1%81%D0%BA"
+			}
+		]
+	},
+	{
+		"blockTitle": "header",
+		"headerTitle": {
+			"span": "Alex is a ",
+			"title": "front-end developer"
+		},
+		"headerText": "I create adaptive websites combining your wishes and my skills",
+		"headerButtonText": {
+			"title": "Contact me !!!",
+			"link": "/contacts"
+		},
+		"headerImg": "/images/header/header-img.png",
+		"headerPostScriptum": {
+			"title": "Currently working on ",
+			"span": "Portfolio"
+		}
+	},
+	{
+		"blockTitle": "projects",
+		"projectsButtonMore": "View all",
+		"projectsItems": [
+			{
+				"id": "projectPortfolio",
+				"stackItems": [
+					{
+						"id": "html",
+						"title": "HTML"
+					},
+					{
+						"id": "scss",
+						"title": "SCSS"
+					},
+					{
+						"id": "js",
+						"title": "JAVASCRIPT"
+					},
+					{
+						"id": "github",
+						"title": "GITHUB"
+					}
+				],
+				"projectTitle": "Portfolio",
+				"projectText": "Minecraft servers hosting",
+				"projectButtons": [
+					{
+						"id": "live",
+						"title": "Live",
+						"span": "<~>"
+					},
+					{
+						"id": "github",
+						"title": "GitHub",
+						"span": "=>"
+					}
+				]
+			}
+		]
+	},
+	{
+		"blockTitle": "skills",
+		"skillsTitle": "skills",
+		"skillsItems": [
+			{
+				"id": "language",
+				"title": "Language",
+				"content": [
+					{
+						"id": "html",
+						"title": "HTML"
+					},
+					{
+						"id": "scss",
+						"title": "CSS"
+					},
+					{
+						"id": "js",
+						"title": "JavaScript"
+					}
+				]
+			},
+			{
+				"id": "frameworks",
+				"title": "Frameworks",
+				"content": [
+					{
+						"id": "react",
+						"title": "React"
+					}
+				]
+			},
+			{
+				"id": "other",
+				"title": "Other",
+				"content": [
+					{
+						"id": "scss",
+						"title": "SCSS"
+					},
+					{
+						"id": "ts",
+						"title": "TypeScript"
+					},
+					{
+						"id": "react tools",
+						"title": "React Tools"
+					},
+					{
+						"id": "redux toolkit",
+						"title": "Redux Toolkit"
+					},
+					{
+						"id": "tanstack",
+						"title": "Tanstack Query"
+					}
+				]
+			}
+		]
+	},
+	{
+		"blockTitle": "about",
+		"aboutTitle": "about-me",
+		"contentItems": [
+			{
+				"id": "welcome",
+				"title": "Hello I'm Alex"
+			},
+			{
+				"id": "some-about",
+				"title": "I’m a self-taught front-end developer based in Kyiv, Ukraine. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences."
+			},
+			{
+				"id": "conclusion",
+				"title": "Transforming my creativity and knowledge into a websites hasbeen my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks."
+			}
+		],
+		"aboutImg": "/images/about/about-img.png"
+	},
+	{
+		"blockTitle": "contacts",
+		"contactsTitle": "contacts",
+		"contactsText": "I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me",
+		"contactsMessage": {
+			"title": "Message me here",
+			"linksItems": [
+				{
+					"id": "telegram",
+					"title": "@justinternetuser",
+					"href": "https://t.me/justinternetuser"
+				}
+			]
+		}
+	},
+	{
+		"blockTitle": "footer",
+		"footerTitle": "Alex",
+		"footerLinks": [
+			{
+				"id": "telegram",
+				"title": "Alex",
+				"subtitle": "@justinternetuser",
+				"href": "https://t.me/justinternetuser"
+			}
+		],
+		"footerAboutMe": "React Frontend Developer",
+		"footerMedia": {
+			"title": "Media",
+			"content": [
+				{
+					"id": "telegram",
+					"img": "/icons/socials/telegram.svg"
+				},
+				{
+					"id": "github",
+					"img": "/icons/socials/github.svg"
+				}
+			]
+		},
+		"footerCopyRight": "© Copyright 2023. Made by Alex"
+	},
+	{
+		"blockTitle": "headerOthers",
+		"items": [
+			{
+				"id": "projects",
+				"title": "projects",
+				"subtitle": "List of my projects"
+			},
+			{
+				"id": "about",
+				"title": "about-me",
+				"subtitle": "Who am i?"
+			},
+			{
+				"id": "contacts",
+				"title": "contacts",
+				"subtitle": "It's time to act?"
+			}
+		]
+	}
+]

@@ -1,0 +1,57 @@
+.footer {
+	@include standartBlock(50px 0px);
+	border-top: 1px solid $green;
+	&__box {
+		width: 100%;
+		@include standartFlex(column, center, flex-start);
+		gap: 50px;
+		.footer__top {
+			width: 100%;
+			@include standartFlex(row, flex-start, space-between);
+			gap: 16px;
+			@media (max-width: $media-m) {
+				@include standartFlex(column, center, space-between);
+			}
+			&_left {
+				width: 30%;
+				@include standartFlex(column, center, flex-start);
+				gap: 16px;
+				.footer__left_item {
+					font-family: $fira;
+					font-size: $px16;
+					font-weight: 500;
+					color: $white;
+					text-decoration: none;
+					text-align: center;
+				}
+				span {
+					color: $green;
+				}
+			}
+			&_right {
+				width: 30%;
+				@include standartFlex(column, center, flex-start);
+				gap: 16px;
+				.footer__right_item {
+					color: $white;
+					font-family: $fira;
+					font-size: $px24;
+					font-weight: 500;
+				}
+				.footer__right_socials {
+					@include standartFlex(row, center, flex-start);
+					gap: 10px;
+				}
+			}
+		}
+		.footer__bottom {
+			@include standartFlex(row, center, center);
+			&_title {
+				color: $green;
+				font-family: $fira;
+				font-size: $px16;
+				font-weight: 400;
+			}
+		}
+	}
+}

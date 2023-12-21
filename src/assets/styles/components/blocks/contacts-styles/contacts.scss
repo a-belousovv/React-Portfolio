@@ -1,0 +1,38 @@
+.contacts {
+	@include standartBlock(50px 0px 150px 0px);
+	&__box {
+		width: 100%;
+		@include standartFlex(column, flex-start, flex-start);
+		gap: 45px;
+		.contacts__header {
+			width: 100%;
+			@include standartFlex(row, center, flex-start);
+			gap: 15px;
+			&_box {
+				width: 40%;
+				height: 1px;
+				background-color: $primary;
+			}
+		}
+		.contacts__content {
+			width: 100%;
+			@include standartFlex(row, flex-start, space-between);
+			@media (max-width: $media-m) {
+				@include standartFlex(column, flex-start, space-between);
+				gap: 15px;
+			}
+			&_left {
+				width: 50%;
+				@media (max-width: $media-m) {
+					width: 100%;
+				}
+				.contacts__left_title {
+					color: $green;
+					font-family: $fira;
+					font-size: $px16;
+					font-weight: 500;
+				}
+			}
+		}
+	}
+}

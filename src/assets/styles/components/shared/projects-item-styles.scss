@@ -1,0 +1,75 @@
+.projects__items_item {
+	width: 30%;
+	@include standartFlex(column, flex-start, flex-start);
+	border: 1px solid $green;
+	min-width: 300px;
+	.projects__item_img {
+		width: 100%;
+		height: 200px;
+	}
+	.projects__item_stack {
+		width: 100%;
+		@include standartFlex(row, center, flex-start);
+		gap: 5px;
+		border-bottom: 1px solid $green;
+		padding: 5px;
+		flex-wrap: wrap;
+		.projects__stack_item {
+			font-family: $fira;
+			color: $green;
+			font-weight: 400;
+			font-size: $px16;
+		}
+	}
+	.projects__item_content {
+		width: 100%;
+		@include standartFlex(column, flex-start, flex-start);
+		gap: 16px;
+		padding: 16px;
+		.projects__content_title {
+			color: $white;
+			font-size: $px24;
+			font-weight: 500;
+			font-family: $fira;
+		}
+		.projects__content_text {
+			font-family: $fira;
+			font-size: $px16;
+			font-weight: 400;
+			color: $green;
+		}
+		.projects__content_buttons {
+			width: 100%;
+			@include standartFlex(row, center, flex-start);
+			gap: 10px;
+			.projects__buttons_item {
+				padding: 8px 16px;
+				border: 1px solid $primary;
+				@include standartFlex(row, center, center);
+				gap: 5px;
+				cursor: pointer;
+				.projects__item_title {
+					color: $white;
+					font-family: $fira;
+					font-size: $px16;
+					font-weight: 500;
+				}
+				span {
+					color: $white;
+					font-family: $fira;
+					font-size: $px16;
+					font-weight: 500;
+				}
+				&.green {
+					border: 1px solid $green;
+					.projects__item_title {
+						color: $green;
+					}
+					span {
+						color: $green;
+					}
+				}
+			}
+		}
+	}
+}

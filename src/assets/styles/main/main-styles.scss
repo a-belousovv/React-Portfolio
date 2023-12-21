@@ -1,0 +1,22 @@
+//@IMPORT SERVICES
+@import '../services/services.scss';
+
+//@IMPORT BLOCKS
+@import '../components/blocks/navigation-styles/navigation.scss';
+@import '../components/blocks/header-styles/header.scss';
+@import '../components/blocks/projects-styles/projects.scss';
+@import '../components/blocks/skills-styles/skills.scss';
+@import '../components/blocks/about-styles/about.scss';
+@import '../components/blocks/contacts-styles/contacts.scss';
+@import '../components/blocks/footer-styles/footer.scss';
+@import '../components/blocks/projects-items-styles/projects-items.scss';
+@import '../components/blocks/about-page-styles/about-page.scss';
+@import '../components/blocks/contacts-header-styles/contacts-header.scss';
+//@IMPORT SHARED
+@import '../components/shared/content-header-title-style.scss';
+@import '../components/shared/projects-item-styles.scss';
+@import '../components/shared/header-other-pages.scss';
+@import '../components/shared/skills-item.scss';
+@import '../components/shared/contacts__message.scss';
+//@IMPORT PAGES
+@import '../components/pages/loadingPage.scss';

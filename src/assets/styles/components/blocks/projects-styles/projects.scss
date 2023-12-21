@@ -1,0 +1,65 @@
+.projects {
+	@include standartBlock(50px 0px);
+	&__box {
+		width: 100%;
+		@include standartFlex(column, flex-start, flex-start);
+		gap: 50px;
+		overflow: hidden;
+		&.animation {
+			.projects__header {
+				transform: translateX(0%);
+			}
+			.projects__items {
+				opacity: 1;
+			}
+		}
+		.projects__header {
+			width: 100%;
+			@include standartFlex(row, center, space-between);
+			gap: 15px;
+			transform: translateX(120%);
+			transition: 1s;
+			.projects__left {
+				@include standartFlex(row, center, center);
+				gap: 15px;
+				width: 80%;
+				.projects__header_line {
+					width: 80%;
+					height: 1px;
+					background-color: $primary;
+				}
+			}
+			.projects__right {
+				@include standartFlex(row, center, center);
+				gap: 10px;
+				cursor: pointer;
+				&:hover {
+					.projects__header_view-arrow {
+						transform: translate(10px);
+					}
+				}
+				.projects__header_view-title {
+					color: $white;
+					font-family: $fira;
+					font-size: $px16;
+					font-weight: 500;
+				}
+				.projects__header_view-arrow {
+					color: $white;
+					font-family: $fira;
+					font-size: $px16;
+					font-weight: 500;
+					transition: 0.3s;
+				}
+			}
+		}
+		.projects__items {
+			width: 100%;
+			@include standartFlex(row, flex-start, center);
+			flex-wrap: wrap;
+			gap: 16px;
+			opacity: 0;
+			transition: 2s;
+		}
+	}
+}

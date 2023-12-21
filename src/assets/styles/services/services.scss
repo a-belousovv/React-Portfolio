@@ -1,0 +1,56 @@
+//@IMPORT NULLING
+@import './nullify.scss';
+
+//@STYLES
+img {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+body {
+	background-color: #21212c;
+	&.hide {
+		overflow-y: hidden;
+	}
+}
+
+.block-container {
+	width: 75%;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+//@VARIABLES
+
+//COLORS
+$primary: #787cdd;
+$green: #8ac077;
+$background: #21212c;
+$white: white;
+
+//FONTS
+$fira: 'Fira Code', monospace;
+
+$px16: 16px;
+$px24: 24px;
+$px32: 32px;
+
+//MEDIA PX
+$media-s: 390px;
+$media-m: 768px;
+$media-l: 1200px;
+
+//@MIXINS
+
+@mixin standartBlock($padding) {
+	width: 100%;
+	height: fit-content;
+	padding: $padding;
+}
+
+@mixin standartFlex($direction, $align, $justify) {
+	display: flex;
+	flex-direction: $direction;
+	align-items: $align;
+	justify-content: $justify;
+}

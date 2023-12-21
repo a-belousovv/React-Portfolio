@@ -1,0 +1,65 @@
+.about {
+	@include standartBlock(50px 0px);
+	&__box {
+		width: 100%;
+		@include standartFlex(column, flex-start, flex-start);
+		gap: 20px;
+		.about__header {
+			width: 100%;
+			@include standartFlex(row, center, flex-start);
+			gap: 15px;
+			&_box {
+				width: 40%;
+				height: 1px;
+				background-color: $primary;
+			}
+		}
+		.about__content {
+			width: 100%;
+			@include standartFlex(row, center, space-between);
+			@media (max-width: $media-m) {
+				width: 100%;
+				@include standartFlex(column, center, center);
+			}
+			.about__content_left {
+				width: 50%;
+				@include standartFlex(column, flex-start, flex-start);
+				gap: 30px;
+				@media (max-width: $media-m) {
+					width: 100%;
+				}
+				.about__content_text {
+					color: $green;
+					font-family: $fira;
+					font-size: $px16;
+					font-weight: 400;
+				}
+				.about__content_button {
+					padding: 8px 20px;
+					border: 1px solid $primary;
+					cursor: pointer;
+					@include standartFlex(row, center, flex-start);
+					gap: 10px;
+					p {
+						color: $white;
+						font-family: $fira;
+						font-size: $px16;
+						font-weight: 500;
+					}
+					span {
+						color: $white;
+						font-family: $fira;
+						font-size: $px16;
+						font-weight: 500;
+						transition: 0.3s;
+					}
+					&:hover {
+						span {
+							transform: translate(10px);
+						}
+					}
+				}
+			}
+		}
+	}
+}

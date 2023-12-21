@@ -1,0 +1,12 @@
+.content__header_title {
+	color: white;
+	font-family: 'Fira Code', monospace;
+	font-size: 32px;
+	font-weight: 500;
+	@media (max-width: $media-m) {
+		font-size: $px24;
+	}
+	span {
+		color: #787cdd;
+	}
+}

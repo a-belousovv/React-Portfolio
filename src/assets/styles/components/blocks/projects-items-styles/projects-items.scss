@@ -1,0 +1,14 @@
+.projects__items {
+	@include standartBlock(50px 0px);
+	&_box {
+		width: 100%;
+		@include standartFlex(column, flex-start, flex-start);
+		gap: 30px;
+		.projects__items-completed {
+			width: 100%;
+			@include standartFlex(row, flex-start, space-between);
+			gap: 16px;
+			flex-wrap: wrap;
+		}
+	}
+}

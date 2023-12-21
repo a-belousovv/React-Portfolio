@@ -1,0 +1,30 @@
+.skills__content_item {
+	border: 1px solid $green;
+	padding: 4px;
+	min-width: 196px;
+	max-width: 412px;
+	@include standartFlex(column, flex-start, center);
+	@media (max-width: $media-m) {
+		max-width: 100%;
+		width: 100%;
+	}
+	.item__content_title {
+		color: $white;
+		font-family: $fira;
+		font-size: $px16;
+		font-weight: 600;
+	}
+	.item__content_elements {
+		width: 100%;
+		border-top: 1px solid $green;
+		@include standartFlex(row, center, center);
+		flex-wrap: wrap;
+		gap: 10px;
+		.elements__item {
+			color: $green;
+			font-size: $px16;
+			font-family: $fira;
+			font-weight: 400;
+		}
+	}
+}
