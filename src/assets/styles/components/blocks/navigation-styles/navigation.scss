@@ -2,9 +2,6 @@
 	@include standartBlock(60px 0px 8px 0px);
 	position: relative;
 	&.burger {
-		.navigation__menu-left {
-			display: none;
-		}
 		.navigation__menu {
 			&.open-burger {
 				width: 100vw;
@@ -41,20 +38,10 @@
 	&__box {
 		width: 100%;
 		@include standartFlex(row, center, center);
-		height: 100px;
 		overflow: hidden;
-		&.animation {
-			.navigation__menu-left {
-				position: absolute;
-				top: 0;
-			}
-			.navigation__menu {
-				transform: translateX(0px);
-			}
-		}
 		.navigation__menu-left {
 			position: absolute;
-			top: -350%;
+			top: 0%;
 			width: 10%;
 			max-width: 50px;
 			left: 40px;
@@ -80,7 +67,6 @@
 			}
 		}
 		.navigation__menu {
-			transform: translateX(130%);
 			width: 100%;
 			height: 30px;
 			@include standartFlex(row, flex-start, flex-start);

@@ -4,11 +4,16 @@
 		width: 100%;
 		@include standartFlex(column, flex-start, flex-start);
 		gap: 30px;
+		overflow: hidden;
+		.content__header_title {
+			transition: 1s;
+		}
 		.projects__items-completed {
 			width: 100%;
 			@include standartFlex(row, flex-start, space-between);
 			gap: 16px;
 			flex-wrap: wrap;
+			transition: 1s;
 		}
 	}
 }

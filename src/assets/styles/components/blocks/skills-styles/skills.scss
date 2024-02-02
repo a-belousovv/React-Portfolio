@@ -4,10 +4,14 @@
 		width: 100%;
 		@include standartFlex(column, flex-start, flex-start);
 		gap: 40px;
+		overflow: hidden;
+
 		.skills__header {
 			width: 100%;
 			@include standartFlex(row, center, flex-start);
 			gap: 15px;
+
+			transition: 1s;
 			&_line {
 				width: 40%;
 				max-width: 491px;
@@ -28,6 +32,8 @@
 				@include standartFlex(row, flex-start, flex-end);
 				gap: 20px;
 				flex-wrap: wrap;
+
+				transition: 1s;
 				@media (max-width: $media-m) {
 					width: 100%;
 					@include standartFlex(column, center, center);
@@ -37,6 +43,8 @@
 				width: 50%;
 				height: 100%;
 				position: relative;
+
+				transition: 1s;
 				@media (max-width: $media-m) {
 					display: none;
 				}

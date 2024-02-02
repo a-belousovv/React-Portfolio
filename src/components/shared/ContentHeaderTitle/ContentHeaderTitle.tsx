@@ -1,12 +1,8 @@
-import { ContentHeaderTitleInterface } from '../../../@types/components/shared/ContentHeaderTitleInterface/types'
-
-const ContentHeaderTitle: React.FC<ContentHeaderTitleInterface> = ({
-	title,
-}) => {
+const ContentHeaderTitle: React.FC = () => {
 	return (
 		<h3 className='content__header_title'>
 			<span>&lt;</span>
-			{title}
+			Тест
 			<span>&gt;</span>
 		</h3>
 	)

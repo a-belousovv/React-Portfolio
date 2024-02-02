@@ -5,6 +5,8 @@
 		width: 100%;
 		@include standartFlex(column, center, flex-start);
 		gap: 50px;
+		overflow: hidden;
+
 		.footer__top {
 			width: 100%;
 			@include standartFlex(row, flex-start, space-between);
@@ -16,6 +18,8 @@
 				width: 30%;
 				@include standartFlex(column, center, flex-start);
 				gap: 16px;
+
+				transition: 1s;
 				.footer__left_item {
 					font-family: $fira;
 					font-size: $px16;
@@ -32,6 +36,8 @@
 				width: 30%;
 				@include standartFlex(column, center, flex-start);
 				gap: 16px;
+
+				transition: 1s;
 				.footer__right_item {
 					color: $white;
 					font-family: $fira;
@@ -46,6 +52,8 @@
 		}
 		.footer__bottom {
 			@include standartFlex(row, center, center);
+
+			transition: 1s;
 			&_title {
 				color: $green;
 				font-family: $fira;

@@ -4,10 +4,14 @@
 		width: 100%;
 		@include standartFlex(column, flex-start, flex-start);
 		gap: 45px;
+		overflow: hidden;
+
 		.contacts__header {
 			width: 100%;
 			@include standartFlex(row, center, flex-start);
 			gap: 15px;
+
+			transition: 1s;
 			&_box {
 				width: 40%;
 				height: 1px;
@@ -23,6 +27,8 @@
 			}
 			&_left {
 				width: 50%;
+
+				transition: 1s;
 				@media (max-width: $media-m) {
 					width: 100%;
 				}
@@ -32,6 +38,9 @@
 					font-size: $px16;
 					font-weight: 500;
 				}
+			}
+			&_right {
+				transition: 1s;
 			}
 		}
 	}

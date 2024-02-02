@@ -6,6 +6,7 @@
 		&_box {
 			width: 100%;
 			@include standartFlex(row, center, space-between);
+			overflow: hidden;
 			@media (max-width: $media-m) {
 				@include standartFlex(column, center, flex-start);
 			}
@@ -13,6 +14,7 @@
 				width: 40%;
 				@include standartFlex(column, flex-start, flex-start);
 				gap: 30px;
+				transition: 1s;
 				@media (max-width: $media-m) {
 					width: 100%;
 				}
@@ -27,6 +29,7 @@
 				width: 40%;
 				height: 507px;
 				max-width: 340px;
+				transition: 1s;
 				@media (max-width: $media-m) {
 					width: 100%;
 				}
@@ -44,6 +47,7 @@
 				width: 100%;
 				@include standartFlex(row, flex-start, center);
 				gap: 24px;
+				transition: 1s;
 				@media (max-width: $media-m) {
 					@include standartFlex(column, flex-start, flex-start);
 				}

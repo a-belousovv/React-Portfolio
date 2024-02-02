@@ -1,18 +1,13 @@
-import { SkillsItemInterface } from '../../../@types/components/blocks/Skills/types'
-import { useData } from '../../../requests/useData'
 import ContentHeaderTitle from '../../shared/ContentHeaderTitle/ContentHeaderTitle'
 import SkillsItem from '../../shared/SkillsItem/SkillsItem'
 
 const Skills = () => {
-	const { data, isSuccess } = useData(['skills'], 'skills')
-	if (!isSuccess) return null
-
 	return (
 		<div className='skills'>
 			<div className='block-container'>
 				<div className='skills__box'>
 					<div className='skills__header'>
-						<ContentHeaderTitle title={data.skillsTitle} />
+						<ContentHeaderTitle />
 						<div className='skills__header_line'></div>
 					</div>
 					<div className='skills__content'>
@@ -34,16 +29,7 @@ const Skills = () => {
 							</div>
 						</div>
 						<div className='skills__content_box'>
-							{data.skillsItems.map((item: SkillsItemInterface) => {
-								return (
-									<SkillsItem
-										key={item.id}
-										id={item.id}
-										content={item.content}
-										title={item.title}
-									/>
-								)
-							})}
+							<SkillsItem />
 						</div>
 					</div>
 				</div>

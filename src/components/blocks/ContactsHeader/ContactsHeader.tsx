@@ -1,10 +1,6 @@
-import { useData } from '../../../requests/useData'
 import ContactsMessage from '../../shared/ContactsMessage/ContactsMessage'
 
 const ContactsHeader = () => {
-	const { data, isSuccess } = useData(['contacts'], 'contact')
-	if (!isSuccess) return null
-
 	return (
 		<div className='contacts__header'>
 			<div className='block-container'>
@@ -20,10 +16,7 @@ const ContactsHeader = () => {
 							<h3 className='contacts__item_title'>Support me here</h3>
 							<p className='contacts__item_text'>6711 2900 4500 5000</p>
 						</div>
-						<ContactsMessage
-							title={data.contactsMessage.title}
-							linksItems={data.contactsMessage.linksItems}
-						/>
+						<ContactsMessage />
 					</div>
 				</div>
 			</div>

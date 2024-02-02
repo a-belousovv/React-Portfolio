@@ -1,21 +1,11 @@
 import React from 'react'
-import {
-	SkillsItemInterface,
-	SkillsItemContent,
-} from '../../../@types/components/blocks/Skills/types'
 
-const SkillsItem: React.FC<SkillsItemInterface> = ({ id, title, content }) => {
+const SkillsItem: React.FC = () => {
 	return (
-		<div className='skills__content_item' key={id}>
-			<h3 className='item__content_title'>{title}</h3>
+		<div className='skills__content_item'>
+			<h3 className='item__content_title'>html5</h3>
 			<div className='item__content_elements'>
-				{content.map((item: SkillsItemContent) => {
-					return (
-						<h4 key={item.id} className='elements__item'>
-							{item.title}
-						</h4>
-					)
-				})}
+				<h4 className='elements__item'>html5</h4>
 			</div>
 		</div>
 	)

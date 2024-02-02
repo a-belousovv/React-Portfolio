@@ -1,5 +1,6 @@
 .about {
 	@include standartBlock(50px 0px);
+	overflow: hidden;
 	&__box {
 		width: 100%;
 		@include standartFlex(column, flex-start, flex-start);
@@ -8,6 +9,8 @@
 			width: 100%;
 			@include standartFlex(row, center, flex-start);
 			gap: 15px;
+			transition: 1s;
+
 			&_box {
 				width: 40%;
 				height: 1px;
@@ -25,6 +28,8 @@
 				width: 50%;
 				@include standartFlex(column, flex-start, flex-start);
 				gap: 30px;
+				transition: 1s;
+
 				@media (max-width: $media-m) {
 					width: 100%;
 				}
@@ -59,6 +64,9 @@
 						}
 					}
 				}
+			}
+			.about__content_img {
+				transition: 1s;
 			}
 		}
 	}

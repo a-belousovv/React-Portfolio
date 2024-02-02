@@ -1,34 +1,18 @@
 import { Link } from 'react-router-dom'
-import { useData } from '../../../requests/useData'
-import { useEffect, useRef } from 'react'
 
 const Header = () => {
-	const { data, isSuccess } = useData(['header'], 'header')
-	const headerBoxRef = useRef<HTMLDivElement>(null)
-	useEffect(() => {
-		setTimeout(() => {
-			if (headerBoxRef.current) {
-				headerBoxRef.current.classList.add('animation')
-			}
-		}, 3500)
-	}, [])
-
-	if (!isSuccess) return null
-
 	return (
 		<div className='header'>
 			<div className='block-container'>
-				<div className='header__box' ref={headerBoxRef}>
+				<div className='header__box'>
 					<div className='header__content'>
 						<h1 className='header__content_title'>
-							<span>{data.headerTitle.span}</span>
-							{data.headerTitle.title}
+							<span>хедер тайтл</span>
+							хедер сабтайтл
 						</h1>
-						<h2 className='header__content_subtitle'>{data.headerText}</h2>
-						<Link
-							to={data.headerButtonText.link}
-							className='header__content_button'>
-							{data.headerButtonText.title}
+						<h2 className='header__content_subtitle'>хедер текст</h2>
+						<Link to='' className='header__content_button'>
+							heder button
 						</Link>
 					</div>
 					<div className='header__img'>
@@ -43,8 +27,8 @@ const Header = () => {
 						<div className='header__img_banner'>
 							<div className='header__banner_box'></div>
 							<h3 className='header__banner_title'>
-								{data.headerPostScriptum.title}
-								<span>{data.headerPostScriptum.span}</span>
+								хедер скриптум
+								<span>хедер посткриптум спан</span>
 							</h3>
 						</div>
 					</div>

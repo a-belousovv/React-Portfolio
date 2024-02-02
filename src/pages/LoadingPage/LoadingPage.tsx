@@ -1,23 +1,6 @@
-import { useEffect, useState } from 'react'
-
 const LoadingPage = () => {
-	const [isShow, setIsShow] = useState(true)
-	useEffect(() => {
-		setTimeout(() => {
-			setIsShow(false)
-		}, 1500)
-	}, [])
-
-	useEffect(() => {
-		const body = document.body
-		body.style.overflow = 'hidden'
-		setTimeout(() => {
-			body.style.removeProperty('overflow')
-		}, 3500)
-	}, [])
-
 	return (
-		<div className={`loading-page ${isShow == true ? '' : 'hide'}`}>
+		<div className='loading-page'>
 			<div className='block-container'>
 				<div className='loading-page__box'>
 					<div className='loading-page__loader'>

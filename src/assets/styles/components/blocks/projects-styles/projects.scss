@@ -5,19 +5,12 @@
 		@include standartFlex(column, flex-start, flex-start);
 		gap: 50px;
 		overflow: hidden;
-		&.animation {
-			.projects__header {
-				transform: translateX(0%);
-			}
-			.projects__items {
-				opacity: 1;
-			}
-		}
+
 		.projects__header {
 			width: 100%;
 			@include standartFlex(row, center, space-between);
 			gap: 15px;
-			transform: translateX(120%);
+
 			transition: 1s;
 			.projects__left {
 				@include standartFlex(row, center, center);
@@ -58,7 +51,7 @@
 			@include standartFlex(row, flex-start, center);
 			flex-wrap: wrap;
 			gap: 16px;
-			opacity: 0;
+
 			transition: 2s;
 		}
 	}

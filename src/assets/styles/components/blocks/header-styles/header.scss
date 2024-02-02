@@ -7,11 +7,7 @@
 		@media (max-width: $media-m) {
 			@include standartFlex(column, center, space-between);
 		}
-		transform: translateX(120%);
 		transition: 1s;
-		&.animation {
-			transform: translateX(0%);
-		}
 		.header__content {
 			@include standartFlex(column, flex-start, flex-start);
 			gap: 32px;

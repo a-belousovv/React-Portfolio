@@ -8,9 +8,7 @@ import ProjectsPage from './pages/ProjectsPage/ProjectsPage.tsx'
 import ContactsPage from './pages/ContactsPage/ContactsPage.tsx'
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
-import { Provider } from 'react-redux'
 
-import { store } from './redux/store/store.ts'
 const router = createBrowserRouter([
 	{ element: <MainPage />, path: '/' },
 	{ element: <AboutPage />, path: '/about' },
@@ -21,9 +19,7 @@ const router = createBrowserRouter([
 
 const client = new QueryClient()
 ReactDOM.createRoot(document.getElementById('root')!).render(
-	<Provider store={store}>
-		<QueryClientProvider client={client}>
-			<RouterProvider router={router} />
-		</QueryClientProvider>
-	</Provider>
+	<QueryClientProvider client={client}>
+		<RouterProvider router={router} />
+	</QueryClientProvider>
 )

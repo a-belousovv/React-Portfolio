@@ -1,34 +1,15 @@
-import React, { useEffect, useRef } from 'react'
-import { useData } from '../../../requests/useData'
-import {
-	HeaderOtherFindItem,
-	HeaderOtherPagesInterface,
-} from '../../../@types/components/shared/HeaderOtherPages/HeaderOtherPages'
+import React from 'react'
 
-const HeaderOtherPages: React.FC<HeaderOtherPagesInterface> = ({ id }) => {
-	const { data, isSuccess } = useData(['headerOthers'], 'headerOthers')
-	const headerBoxRef = useRef<HTMLDivElement>(null)
-	useEffect(() => {
-		setTimeout(() => {
-			if (headerBoxRef.current) {
-				headerBoxRef.current.classList.add('animation')
-			}
-		}, 3500)
-	}, [])
-
-	if (!isSuccess) return null
-	const findItem = data.items.find((item: HeaderOtherFindItem) => item.id == id)
-	if (!findItem) return null
-
+const HeaderOtherPages: React.FC = () => {
 	return (
 		<div className='header-other-pages'>
 			<div className='block-container'>
-				<div className='header__box' ref={headerBoxRef}>
+				<div className='header__box'>
 					<h3 className='header__title'>
 						<span>/</span>
-						{findItem.title}
+						айтем тайтл
 					</h3>
-					<p className='header__text'>{findItem.subtitle}</p>
+					<p className='header__text'>айтем сабтатйтл</p>
 				</div>
 			</div>
 		</div>
