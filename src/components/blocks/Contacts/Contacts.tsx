@@ -7,7 +7,7 @@ export const Contacts = () => {
 			<div className='block-container'>
 				<div className='contacts__box'>
 					<div className='contacts__header'>
-						<ContentHeaderTitle />
+						<ContentHeaderTitle text='contacts' />
 						<div className='contacts__header_box'></div>
 					</div>
 					<div className='contacts__content'>
