@@ -12,8 +12,8 @@ const ProjectsItem: React.FC = () => {
 				<h4 className='projects__content_text'>проджект текст</h4>
 				<div className='projects__content_buttons'>
 					<div className='projects__buttons_item'>
-						<h4 className='projects__item_title'>айте тайтл</h4>
-						<span>айтем спан</span>
+						<h4 className='projects__item_title'>Live</h4>
+						<span>&lt;~&gt;</span>
 					</div>
 				</div>
 			</div>

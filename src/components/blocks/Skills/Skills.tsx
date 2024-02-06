@@ -7,7 +7,7 @@ const Skills = () => {
 			<div className='block-container'>
 				<div className='skills__box'>
 					<div className='skills__header'>
-						<ContentHeaderTitle />
+						<ContentHeaderTitle text='skills' />
 						<div className='skills__header_line'></div>
 					</div>
 					<div className='skills__content'>

@@ -7,12 +7,14 @@ const Header = () => {
 				<div className='header__box'>
 					<div className='header__content'>
 						<h1 className='header__content_title'>
-							<span>хедер тайтл</span>
-							хедер сабтайтл
+							<span>Alex is a </span>
+							front-end <br /> developer
 						</h1>
-						<h2 className='header__content_subtitle'>хедер текст</h2>
+						<h2 className='header__content_subtitle'>
+							I combine your wishes and my abilities
+						</h2>
 						<Link to='' className='header__content_button'>
-							heder button
+							Contact me!!!
 						</Link>
 					</div>
 					<div className='header__img'>
@@ -27,8 +29,8 @@ const Header = () => {
 						<div className='header__img_banner'>
 							<div className='header__banner_box'></div>
 							<h3 className='header__banner_title'>
-								хедер скриптум
-								<span>хедер посткриптум спан</span>
+								Currently working on
+								<span> Portfolio</span>
 							</h3>
 						</div>
 					</div>

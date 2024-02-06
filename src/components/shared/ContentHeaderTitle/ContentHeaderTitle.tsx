@@ -1,8 +1,11 @@
-const ContentHeaderTitle: React.FC = () => {
+interface ContentHeaderTitleProps {
+	text: string
+}
+const ContentHeaderTitle: React.FC<ContentHeaderTitleProps> = ({ text }) => {
 	return (
 		<h3 className='content__header_title'>
 			<span>&lt;</span>
-			Тест
+			{text}
 			<span>&gt;</span>
 		</h3>
 	)

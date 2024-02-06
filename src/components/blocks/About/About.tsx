@@ -6,10 +6,11 @@ const About = () => {
 			<div className='block-container'>
 				<div className='about__box'>
 					<div className='about__header'>
-						<ContentHeaderTitle />
+						<ContentHeaderTitle text='about-me' />
 						<div className='about__header_box'></div>
 					</div>
 					<AboutInfo />
+					<div className='about__button-more'>Read more -&gt;</div>
 				</div>
 			</div>
 		</div>
