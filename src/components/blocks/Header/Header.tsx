@@ -11,7 +11,7 @@ const Header = () => {
 							front-end <br /> developer
 						</h1>
 						<h2 className='header__content_subtitle'>
-							I combine your wishes and my abilities
+							My experience allows me to combine your desires and my skills
 						</h2>
 						<Link to='' className='header__content_button'>
 							Contact me!!!

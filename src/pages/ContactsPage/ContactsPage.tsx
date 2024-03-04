@@ -6,7 +6,7 @@ const ContactsPage = () => {
 	return (
 		<div>
 			<Navigation />
-			<HeaderOtherPages />
+			<HeaderOtherPages title='contacts' subtitle='Contact with me' />
 			<ContactsHeader />
 			<Footer />
 		</div>

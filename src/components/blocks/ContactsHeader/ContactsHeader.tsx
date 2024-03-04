@@ -1,6 +1,23 @@
+import { ContactsMessageItem } from '../../../@types/Contacts/interface'
 import ContactsMessage from '../../shared/ContactsMessage/ContactsMessage'
 
 const ContactsHeader = () => {
+	const linkItems: ContactsMessageItem[] = [
+		{
+			id: 'telegram-id',
+			imgSrc: '/icons/socials/telegram.svg',
+			title: 'Telegram',
+			linkText: '@justinternetuser',
+			linkHref: 'https:/t.me/justinternetuser',
+		},
+		{
+			id: 'card-id',
+			imgSrc: '/icons/socials/telegram.svg',
+			title: 'Support Me',
+			linkText: '6700 2900 4500 5000',
+			linkHref: 'https://belarusbank.by/',
+		},
+	]
 	return (
 		<div className='contacts__header'>
 			<div className='block-container'>
@@ -12,11 +29,9 @@ const ContactsHeader = () => {
 						</h3>
 					</div>
 					<div className='contacts__header_right'>
-						<div className='contacts__right_item'>
-							<h3 className='contacts__item_title'>Support me here</h3>
-							<p className='contacts__item_text'>6711 2900 4500 5000</p>
-						</div>
-						<ContactsMessage />
+						{linkItems.map((item) => {
+							return <ContactsMessage key={item.id} {...item} />
+						})}
 					</div>
 				</div>
 			</div>

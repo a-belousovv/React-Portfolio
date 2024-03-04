@@ -1,12 +1,23 @@
 .navigation {
 	@include standartBlock(60px 0px 8px 0px);
 	position: relative;
+	transition: 0.75s;
 	&.burger {
-		.navigation__menu {
-			&.open-burger {
-				width: 100vw;
-				height: 400px;
-				overflow: scroll;
+		.navigation__menu-left {
+			display: none;
+			.navigation__menu_line {
+				display: none;
+			}
+			.navigation__menu_items {
+				width: 100%;
+				@include standartFlex(row, center, flex-start);
+			}
+		}
+		&.open-burger {
+			width: 100vw;
+			height: 100vh;
+			overflow-y: scroll;
+			.navigation__menu {
 				background-color: $background;
 				@include standartFlex(column, flex-start, flex-start);
 				position: relative;
@@ -27,6 +38,17 @@
 					}
 				}
 			}
+			.navigation__menu-left {
+				position: relative;
+				top: 0;
+				width: 100%;
+				max-width: 100%;
+				left: 0;
+				display: flex;
+			}
+		}
+		.navigation__menu {
+			height: fit-content;
 			.navigation__menu_button-burger {
 				display: block;
 			}
@@ -34,11 +56,15 @@
 				display: none;
 			}
 		}
+		.navigation__box {
+			flex-direction: column-reverse;
+			gap: 30px;
+		}
 	}
 	&__box {
 		width: 100%;
 		@include standartFlex(row, center, center);
-		overflow: hidden;
+
 		.navigation__menu-left {
 			position: absolute;
 			top: 0%;
@@ -62,6 +88,9 @@
 					transition: 1s;
 					&:hover {
 						transform: rotate(360deg);
+					}
+					&::before {
+						display: none;
 					}
 				}
 			}
@@ -99,6 +128,14 @@
 					gap: 1px;
 					text-decoration: none;
 					transition: 0.3s;
+					&::before {
+						content: '/';
+						color: $primary;
+						font-family: $fira;
+						font-size: $px16;
+						font-weight: 500;
+					}
+					cursor: pointer;
 					.navigation__item_title {
 						color: $green;
 						font-family: $fira;
@@ -106,10 +143,6 @@
 						font-weight: 500;
 					}
 					span {
-						color: $primary;
-						font-family: $fira;
-						font-size: $px16;
-						font-weight: 500;
 					}
 					&.active {
 						.navigation__item_title {

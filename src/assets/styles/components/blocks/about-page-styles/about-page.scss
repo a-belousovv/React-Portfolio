@@ -5,7 +5,7 @@
 		@include standartBlock(0px);
 		&_box {
 			width: 100%;
-			@include standartFlex(row, center, space-between);
+			@include standartFlex(row, center, center);
 			overflow: hidden;
 			@media (max-width: $media-m) {
 				@include standartFlex(column, center, flex-start);

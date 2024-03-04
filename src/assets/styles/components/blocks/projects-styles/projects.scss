@@ -26,6 +26,7 @@
 				@include standartFlex(row, center, center);
 				gap: 10px;
 				cursor: pointer;
+				text-decoration: none;
 				&:hover {
 					.projects__header_view-arrow {
 						transform: translate(10px);

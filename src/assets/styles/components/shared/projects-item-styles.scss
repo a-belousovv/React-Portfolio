@@ -48,6 +48,7 @@
 				@include standartFlex(row, center, center);
 				gap: 5px;
 				cursor: pointer;
+				text-decoration: none;
 				.projects__item_title {
 					color: $white;
 					font-family: $fira;

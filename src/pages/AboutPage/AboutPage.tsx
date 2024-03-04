@@ -7,7 +7,7 @@ const AboutPage = () => {
 	return (
 		<div className='about-page'>
 			<Navigation />
-			<HeaderOtherPages />
+			<HeaderOtherPages title='about me' subtitle='Who am i?' />
 			<AboutInfo />
 			<AboutSkills />
 			<Footer />

@@ -1,11 +1,17 @@
 import React from 'react'
-
-const SkillsItem: React.FC = () => {
+import { SkillsItemProps } from '../../../@types/Skills/SkillsTypes'
+const SkillsItem: React.FC<SkillsItemProps> = ({ title, content }) => {
 	return (
 		<div className='skills__content_item'>
-			<h3 className='item__content_title'>html5</h3>
+			<h3 className='item__content_title'>{title}</h3>
 			<div className='item__content_elements'>
-				<h4 className='elements__item'>html5</h4>
+				{content.map((item) => {
+					return (
+						<h4 className='elements__item' key={item.id}>
+							{item.title}
+						</h4>
+					)
+				})}
 			</div>
 		</div>
 	)
